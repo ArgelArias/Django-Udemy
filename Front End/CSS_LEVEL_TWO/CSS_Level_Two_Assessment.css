@@ -1,0 +1,33 @@
+h1{
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+}
+
+table{
+  margin: auto;
+}
+
+td{
+  padding: 250px 100px 250px 100px;
+  border: 6px solid white;
+}
+
+#fisrt{
+  background-color: #011627;
+}
+
+#second{
+  background-color: #fdfffc;
+}
+
+#third{
+  background-color: #2ec4b6;
+}
+
+#fourth{
+  background-color: #e71d36;
+}
+
+#fifth{
+  background-color: #ff9f1c;
+}

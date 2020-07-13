@@ -1,0 +1,15 @@
+button{
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  border: 5px solid black;
+  font-size: 100px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+#turn{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
