@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from django.core import validators
 from my_users_app.models import User
-from . import forms
+from my_users_app.forms import MyUserForm
 
 # Create your views here.
 
@@ -9,7 +10,14 @@ def index(request):
     return render(request, 'my_users_app/index.html',context=my_dict)
 
 def insert_users(request):
-    form = forms.MyUserForm()
+    form = MyUserForm()
+
+    if request.method == 'POST':
+        form = MyUserForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return index(request)
+            
     return render(request, 'my_users_app/insert_users.html', {'form': form})
 
 def show_users(request):
