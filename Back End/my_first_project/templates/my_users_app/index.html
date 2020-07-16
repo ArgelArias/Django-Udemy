@@ -10,8 +10,8 @@
 
     <h1> {{ welcome }}</h1>
 
-    <a href="insert_users.html"><h3>Insert a new user</h3></a>
-    <a href="show_users.html"><h3>See users list</h3></a>
+    <a href="{% url 'my_users_app:insert_users' %}"><h3>Insert a new user</h3></a>
+    <a href="{% url 'my_users_app:show_users' %}"><h3>See users list</h3></a>
 
   </body>
 </html>

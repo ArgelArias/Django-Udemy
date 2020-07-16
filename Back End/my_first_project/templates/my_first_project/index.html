@@ -10,8 +10,8 @@
 
     <h1> {{ welcome }}</h1>
 
-    <a href="./my_first_app"><h3>Go to the firts APP</h3></a>
-    <a href="./my_users_app"><h3>Go to users APP</h3></a>
+    <a href="{% url 'my_first_app:index' %}"><h3>Go to the first APP</h3></a>
+    <a href="{% url 'my_users_app:index' %}"><h3>Go to the users APP</h3></a>
 
   </body>
 </html>

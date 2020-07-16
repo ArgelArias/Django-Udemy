@@ -20,7 +20,6 @@ from my_first_project import views
 urlpatterns = [
     re_path(r'^my_first_app/',include('my_first_app.urls')),
     re_path(r'^my_users_app/',include('my_users_app.urls')),
-    path('help_app/',include('help_app.urls')),
     path('',views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
