@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/bootstrap.4.5.0.min.css" %} ">
+    <title>My First App</title>
+  </head>
+  <body>
+    <img src="{% static "images/Python-logo.svg" %}" alt="No esta morro!">
+
+    {% block body_block %}
+    {% endblock %}
+
+  </body>
+</html>

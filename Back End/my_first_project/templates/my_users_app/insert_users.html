@@ -1,11 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Users</title>
-  </head>
-  <body>
+{% extends "my_users_app/base.html" %}
+  {% block body_block %}
 
     <h1>Insert New User</h1>
 
@@ -23,5 +18,4 @@
 
     <a href="{% url 'my_users_app:index' %}"> <h3>Back to main Users</h3> </a>
 
-  </body>
-</html>
+  {% endblock %}
